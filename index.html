@@ -9,156 +9,199 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#090909;
-    color:white;
+background:#080808;
+color:white;
 }
+
+
+/* NAVIGATION */
+
+nav{
+position:sticky;
+top:0;
+background:#111;
+padding:15px;
+text-align:center;
+border-bottom:2px solid #ff7900;
+z-index:10;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff7900;
+}
+
 
 
 /* HEADER */
 
 header{
-    text-align:center;
-    padding:40px 20px;
+text-align:center;
+padding:50px 20px;
 }
+
 
 .logo{
-    width:160px;
-    height:160px;
-    object-fit:contain;
-    border-radius:50%;
-    transition:0.4s;
+width:180px;
+transition:.4s;
 }
+
 
 .logo:hover{
-    transform:scale(1.1) rotate(5deg);
+transform:scale(1.1) rotate(5deg);
 }
+
 
 h1{
-    color:#ff7900;
-    margin-top:20px;
-    font-size:35px;
+color:#ff7900;
+font-size:40px;
+margin:20px;
 }
 
 
-/* SECTIONS */
-
-section{
-    max-width:900px;
-    margin:30px auto;
-    background:#111;
-    border:1px solid #ff7900;
-    border-radius:20px;
-    padding:30px;
-    box-shadow:0 0 20px #ff790055;
-    transition:0.4s;
+.orange{
+color:#ff7900;
 }
 
-section:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 30px #ff7900;
+
+
+/* BLOCS */
+
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+
+.card{
+
+background:#121212;
+border:1px solid #ff7900;
+border-radius:20px;
+padding:30px;
+margin:30px 0;
+transition:.4s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 0 25px #ff7900;
+
 }
 
 
 h2{
-    color:#ff7900;
-    margin-bottom:20px;
-}
 
+color:#ff7900;
+margin-bottom:20px;
 
-p{
-    line-height:1.7;
 }
 
 
 ul{
-    margin:20px;
+
+margin-left:20px;
+
 }
 
+
 li{
-    margin:10px;
+
+margin:12px;
+
 }
+
+
+
+/* SERVICES */
+
+.services{
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+
+}
+
+
+.service{
+
+flex:1;
+min-width:220px;
+background:#1a1a1a;
+padding:20px;
+border-radius:15px;
+transition:.3s;
+
+}
+
+
+.service:hover{
+
+background:#ff7900;
+color:white;
+transform:scale(1.05);
+
+}
+
 
 
 /* BOUTONS */
 
-button,a.btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#ff7900;
-    color:white;
-    padding:15px 25px;
-    border-radius:12px;
-    border:none;
-    cursor:pointer;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
+.btn{
+
+display:inline-block;
+background:#ff7900;
+color:white;
+padding:15px 25px;
+border-radius:12px;
+text-decoration:none;
+margin-top:20px;
+font-weight:bold;
+transition:.3s;
+
 }
 
 
-button:hover,a.btn:hover{
-    background:white;
-    color:#ff7900;
-    transform:scale(1.05);
+.btn:hover{
+
+background:white;
+color:#ff7900;
+transform:scale(1.08);
+
 }
 
-
-/* FORMULAIRES */
-
-.formulaire{
-    display:none;
-    background:#181818;
-    padding:25px;
-    border-radius:15px;
-    margin-top:20px;
-}
-
-
-input,textarea{
-    width:100%;
-    padding:12px;
-    margin:8px 0;
-    border-radius:8px;
-    border:none;
-}
-
-
-label{
-    display:block;
-    margin:10px 0;
-}
 
 
 footer{
-    text-align:center;
-    padding:30px;
-    color:#888;
+
+text-align:center;
+padding:30px;
+color:#777;
+
 }
+
 
 </style>
-
-<script>
-
-function ouvrir(id){
-    let f=document.getElementById(id);
-
-    if(f.style.display==="block"){
-        f.style.display="none";
-    }
-    else{
-        f.style.display="block";
-    }
-}
-
-
-</script>
 
 </head>
 
@@ -166,201 +209,194 @@ function ouvrir(id){
 <body>
 
 
-<header>
+<nav>
+
+<a href="#accueil">Accueil</a>
+
+<a href="#services">Services</a>
+
+<a href="#adhesion">Adhésion</a>
+
+<a href="#partenariat">Partenariat</a>
+
+<a href="#recrutement">Recrutement</a>
+
+</nav>
+
+
+
+<header id="accueil">
+
 
 <img class="logo" src="logo.png">
 
-<h1>🎓 Académie Nexar - V1™️</h1>
+
+<h1>
+🎓 Académie Nexar - V1™️
+</h1>
+
 
 <p>
-La solution digitale pour les établissements scolaires
+La solution digitale nouvelle génération pour les établissements scolaires.
 </p>
+
+
+<a class="btn" href="https://discord.gg/2ywmXFAw8h">
+Rejoindre Discord
+</a>
+
 
 </header>
 
 
 
-<section>
-
-<h2>🚀 Notre solution</h2>
-
-<p>
-Simplifiez votre gestion, modernisez votre organisation.
-</p>
-
-<p>
-Académie Nexar - V1™️ est un ensemble de services pensés pour les collèges,
-lycées et établissements éducatifs.
-</p>
+<div class="container">
 
 
-<ul>
 
-<li>✔️ Gestion de la vie scolaire</li>
-
-<li>✔️ Suivi des élèves en temps réel</li>
-
-<li>✔️ Communication simplifiée enseignants / élèves / parents</li>
-
-<li>✔️ Outils numériques modernes et sécurisés</li>
-
-<li>✔️ Plateforme centralisée</li>
-
-</ul>
-
-
-<p>
-📊 Résultat : une meilleure organisation, un gain de temps et une expérience scolaire optimisée.
-</p>
+<section class="card">
 
 
 <h2>
-🚀 Passez à une nouvelle génération d’outils scolaires.
+🚀 Présentation
 </h2>
 
 
+<p>
+Académie Nexar - V1™️ accompagne les établissements scolaires
+dans leur transformation numérique.
+</p>
+
+<br>
+
+<p>
+Simplifiez votre gestion, modernisez votre organisation et profitez
+d'outils pensés pour les collèges, lycées et établissements éducatifs.
+</p>
+
+
 </section>
 
 
 
-<section>
-
-<h2>🤝 Adhésion</h2>
-
-<button onclick="ouvrir('adhesion')">
-Faire une demande d’adhésion
-</button>
 
 
-<div id="adhesion" class="formulaire">
+<section class="card" id="services">
 
 
-<h3>Formulaire d’adhésion</h3>
+<h2>
+💻 Nos solutions
+</h2>
 
 
-<label><input type="checkbox"> Avez-vous une équipe de direction complète et mature ?</label>
-
-<label><input type="checkbox"> Le serveur est bien structuré (rôles, salons, catégories) ?</label>
-
-<label><input type="checkbox"> Avez-vous minimum 20 membres hors-bots ?</label>
-
-<label><input type="checkbox"> Êtes-vous prêt à tenir un collège actif ?</label>
-
-<label><input type="checkbox"> Acceptez-vous de signer un contrat ?</label>
+<div class="services">
 
 
-<input placeholder="Nom de l’établissement">
-
-<input placeholder="Nom de l’owner">
-
-<input placeholder="Type d’établissement">
-
-<input placeholder="Service souhaité">
-
-<input placeholder="Pseudo Discord">
+<div class="service">
+Gestion de la vie scolaire
+</div>
 
 
-<button>
-Envoyer la demande
-</button>
+<div class="service">
+Suivi des élèves en temps réel
+</div>
+
+
+<div class="service">
+Communication enseignants / élèves / parents
+</div>
+
+
+<div class="service">
+Outils numériques sécurisés
+</div>
+
+
+<div class="service">
+Plateforme centralisée
+</div>
 
 
 </div>
 
-</section>
-
-
-
-
-<section>
-
-<h2>🤝 Partenariat</h2>
-
-
-<button onclick="ouvrir('partenariat')">
-Formulaire partenariat
-</button>
-
-
-<div id="partenariat" class="formulaire">
-
-
-<input placeholder="Nom de l’établissement">
-
-<input placeholder="Nombre de membres">
-
-<input placeholder="Type de ping">
-
-<input placeholder="Lien du serveur">
-
-<input placeholder="Pseudo Discord">
-
-
-<button>
-Envoyer
-</button>
-
-
-</div>
 
 </section>
 
 
 
 
-<section>
 
-<h2>👥 Recrutement</h2>
-
-
-<button onclick="ouvrir('recrutement')">
-Formulaire recrutement
-</button>
+<section class="card" id="adhesion">
 
 
-<div id="recrutement" class="formulaire">
+<h2>
+🤝 Adhésion
+</h2>
 
 
-<textarea placeholder="Pourquoi notre académie et pas une autre ?"></textarea>
+<p>
+Votre établissement souhaite rejoindre Académie Nexar ?
+</p>
 
 
-<input placeholder="Poste souhaité">
-
-
-<textarea placeholder="Vos motivations"></textarea>
-
-
-<input placeholder="Pseudo Discord">
-
-
-<label>
-<input type="checkbox">
-J’accepte de ne pas sans cesse demander "où en est ma demande"
-</label>
-
-
-<button>
-Envoyer
-</button>
-
-
-</div>
-
-</section>
-
-
-
-
-<section>
-
-<h2>💬 Discord</h2>
-
-<a class="btn" href="https://discord.gg/2ywmXFAw8h">
-Rejoindre notre serveur Discord
+<a class="btn" href="#">
+Faire une demande
 </a>
 
 
 </section>
+
+
+
+
+
+<section class="card" id="partenariat">
+
+
+<h2>
+🌐 Partenariat
+</h2>
+
+
+<p>
+Développez un partenariat avec notre académie.
+</p>
+
+
+<a class="btn" href="#">
+Formulaire partenariat
+</a>
+
+
+</section>
+
+
+
+
+
+<section class="card" id="recrutement">
+
+
+<h2>
+👥 Recrutement
+</h2>
+
+
+<p>
+Rejoignez l'équipe Académie Nexar.
+</p>
+
+
+<a class="btn" href="#">
+Postuler
+</a>
+
+
+</section>
+
+
+
+</div>
 
 
 
