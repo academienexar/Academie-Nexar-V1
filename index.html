@@ -1,207 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Académie Nexar - V1™️</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#080808;
-color:white;
-}
-
-
-/* NAVIGATION */
-
-nav{
-position:sticky;
-top:0;
-background:#111;
-padding:15px;
-text-align:center;
-border-bottom:2px solid #ff7900;
-z-index:10;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ff7900;
-}
-
-
-
-/* HEADER */
-
-header{
-text-align:center;
-padding:50px 20px;
-}
-
-
-.logo{
-width:180px;
-transition:.4s;
-}
-
-
-.logo:hover{
-transform:scale(1.1) rotate(5deg);
-}
-
-
-h1{
-color:#ff7900;
-font-size:40px;
-margin:20px;
-}
-
-
-.orange{
-color:#ff7900;
-}
-
-
-
-/* BLOCS */
-
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:20px;
-}
-
-
-.card{
-
-background:#121212;
-border:1px solid #ff7900;
-border-radius:20px;
-padding:30px;
-margin:30px 0;
-transition:.4s;
-
-}
-
-
-.card:hover{
-
-transform:translateY(-8px);
-box-shadow:0 0 25px #ff7900;
-
-}
-
-
-h2{
-
-color:#ff7900;
-margin-bottom:20px;
-
-}
-
-
-ul{
-
-margin-left:20px;
-
-}
-
-
-li{
-
-margin:12px;
-
-}
-
-
-
-/* SERVICES */
-
-.services{
-
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-
-}
-
-
-.service{
-
-flex:1;
-min-width:220px;
-background:#1a1a1a;
-padding:20px;
-border-radius:15px;
-transition:.3s;
-
-}
-
-
-.service:hover{
-
-background:#ff7900;
-color:white;
-transform:scale(1.05);
-
-}
-
-
-
-/* BOUTONS */
-
-.btn{
-
-display:inline-block;
-background:#ff7900;
-color:white;
-padding:15px 25px;
-border-radius:12px;
-text-decoration:none;
-margin-top:20px;
-font-weight:bold;
-transition:.3s;
-
-}
-
-
-.btn:hover{
-
-background:white;
-color:#ff7900;
-transform:scale(1.08);
-
-}
-
-
-
-footer{
-
-text-align:center;
-padding:30px;
-color:#777;
-
-}
-
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -209,69 +16,91 @@ color:#777;
 <body>
 
 
+<div class="background"></div>
+
+
+
 <nav>
 
-<a href="#accueil">Accueil</a>
+<div class="nav-logo">
+<img src="logo.png">
+</div>
 
+
+<div class="links">
+
+<a href="index.html">Accueil</a>
 <a href="#services">Services</a>
+<a href="adhesion.html">Adhésion</a>
+<a href="partenariat.html">Partenariat</a>
+<a href="recrutement.html">Recrutement</a>
 
-<a href="#adhesion">Adhésion</a>
-
-<a href="#partenariat">Partenariat</a>
-
-<a href="#recrutement">Recrutement</a>
+</div>
 
 </nav>
 
 
 
-<header id="accueil">
+
+<header class="hero">
 
 
-<img class="logo" src="logo.png">
+<img class="main-logo" src="logo.png">
 
 
 <h1>
-🎓 Académie Nexar - V1™️
+🎓 Académie <span>Nexar</span> - V1™️
 </h1>
 
 
 <p>
-La solution digitale nouvelle génération pour les établissements scolaires.
+La nouvelle génération de gestion numérique pour les établissements scolaires.
 </p>
 
 
-<a class="btn" href="https://discord.gg/2ywmXFAw8h">
+<div class="buttons">
+
+<a href="https://discord.gg/2ywmXFAw8h" class="button">
 Rejoindre Discord
 </a>
+
+
+<a href="#services" class="button second">
+Découvrir nos services
+</a>
+
+
+</div>
 
 
 </header>
 
 
 
-<div class="container">
 
 
-
-<section class="card">
+<section class="presentation reveal">
 
 
 <h2>
-🚀 Présentation
+Une académie pensée pour l'avenir
 </h2>
 
 
 <p>
-Académie Nexar - V1™️ accompagne les établissements scolaires
-dans leur transformation numérique.
+
+Académie Nexar - V1™️ propose une nouvelle manière
+de gérer les établissements scolaires grâce à des outils numériques modernes,
+sécurisés et accessibles.
+
 </p>
 
-<br>
 
 <p>
-Simplifiez votre gestion, modernisez votre organisation et profitez
-d'outils pensés pour les collèges, lycées et établissements éducatifs.
+
+Notre objectif : simplifier le quotidien des directions,
+enseignants, élèves et membres administratifs.
+
 </p>
 
 
@@ -281,40 +110,80 @@ d'outils pensés pour les collèges, lycées et établissements éducatifs.
 
 
 
-<section class="card" id="services">
+
+
+<section id="services" class="services">
 
 
 <h2>
-💻 Nos solutions
+💻 Nos services
 </h2>
 
 
-<div class="services">
+
+<div class="cards">
 
 
-<div class="service">
-Gestion de la vie scolaire
+
+<div class="card reveal">
+
+<h3>
+📚 Vie scolaire
+</h3>
+
+<p>
+Gestion des établissements, organisation et suivi quotidien.
+</p>
+
 </div>
 
 
-<div class="service">
-Suivi des élèves en temps réel
+
+<div class="card reveal">
+
+<h3>
+👨‍🎓 Suivi élèves
+</h3>
+
+<p>
+Un suivi clair et efficace pour améliorer l'organisation.
+</p>
+
 </div>
 
 
-<div class="service">
-Communication enseignants / élèves / parents
+
+
+<div class="card reveal">
+
+<h3>
+💬 Communication
+</h3>
+
+<p>
+Facilitez les échanges entre équipes, élèves et familles.
+</p>
+
 </div>
 
 
-<div class="service">
-Outils numériques sécurisés
+
+
+
+<div class="card reveal">
+
+<h3>
+🔐 Sécurité
+</h3>
+
+<p>
+Des outils modernes conçus pour protéger vos données.
+</p>
+
 </div>
 
 
-<div class="service">
-Plateforme centralisée
-</div>
+
 
 
 </div>
@@ -326,86 +195,91 @@ Plateforme centralisée
 
 
 
-<section class="card" id="adhesion">
+
+
+<section class="why reveal">
 
 
 <h2>
-🤝 Adhésion
+🚀 Pourquoi Nexar ?
+</h2>
+
+
+<ul>
+
+<li>✨ Une expérience moderne</li>
+
+<li>🔥 Une communauté active</li>
+
+<li>🎓 Une organisation adaptée aux établissements</li>
+
+<li>⚡ Une évolution constante des services</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="join reveal">
+
+
+<h2>
+Prêt à rejoindre la nouvelle génération ?
 </h2>
 
 
 <p>
-Votre établissement souhaite rejoindre Académie Nexar ?
+Découvrez nos offres d'adhésion, partenariats et recrutements.
 </p>
 
 
-<a class="btn" href="#">
-Faire une demande
+<div>
+
+
+<a class="button" href="adhesion.html">
+Rejoindre Nexar
 </a>
 
 
-</section>
-
-
-
-
-
-<section class="card" id="partenariat">
-
-
-<h2>
-🌐 Partenariat
-</h2>
-
-
-<p>
-Développez un partenariat avec notre académie.
-</p>
-
-
-<a class="btn" href="#">
-Formulaire partenariat
-</a>
-
-
-</section>
-
-
-
-
-
-<section class="card" id="recrutement">
-
-
-<h2>
-👥 Recrutement
-</h2>
-
-
-<p>
-Rejoignez l'équipe Académie Nexar.
-</p>
-
-
-<a class="btn" href="#">
-Postuler
-</a>
-
-
-</section>
-
-
-
 </div>
+
+
+</section>
+
+
+
+
 
 
 
 <footer>
 
+
+<img src="logo.png">
+
+
+<p>
 © Académie Nexar - V1™️
+</p>
+
 
 </footer>
 
 
+
+
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
