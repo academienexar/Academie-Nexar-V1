@@ -1,0 +1,232 @@
+/* =========================
+   ACADEMIE NEXAR
+   COOKIE / MENTIONS CSS
+========================= */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+    background:#050505;
+    color:white;
+
+}
+
+
+
+
+.background{
+
+position:fixed;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(circle at top left,#ff790055,transparent 40%),
+radial-gradient(circle at bottom right,#ff790033,transparent 40%);
+
+z-index:-1;
+
+}
+
+
+
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+padding:20px 40px;
+
+background:#080808dd;
+
+border-bottom:1px solid #ff790055;
+
+}
+
+
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+font-size:22px;
+
+font-weight:bold;
+
+}
+
+
+
+.brand img{
+
+width:50px;
+
+height:50px;
+
+object-fit:contain;
+
+}
+
+
+
+
+
+.section{
+
+padding:150px 20px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+
+
+.section-title h2{
+
+color:#ff7900;
+
+font-size:38px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.section-title p{
+
+color:#aaa;
+
+}
+
+
+
+
+
+.service-card{
+
+
+max-width:800px;
+
+background:#111;
+
+border:1px solid #ff7900;
+
+border-radius:30px;
+
+padding:40px;
+
+box-shadow:
+
+0 0 40px #ff790044;
+
+
+animation:show 1s ease;
+
+
+}
+
+
+
+
+.service-card h3{
+
+color:#ff7900;
+
+font-size:25px;
+
+margin:25px 0 15px;
+
+}
+
+
+
+.service-card p{
+
+color:#ddd;
+
+line-height:1.7;
+
+}
+
+
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+
+
+
+
+
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+color:#777;
+
+}
+
+
+
+footer img{
+
+width:80px;
+
+margin-bottom:15px;
+
+}
