@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Partenariat - Académie Nexar</title>
+
+<link rel="stylesheet" href="partenariat.css">
+
+</head>
+
+
+<body>
+
+
+<div class="background"></div>
+
+
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+
+<div class="logo-area">
+
+<img src="logo.png">
+
+<span>
+Académie Nexar
+</span>
+
+</div>
+
+
+
+
+<div class="menu">
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="adhesion.html">
+Adhésion
+</a>
+
+
+<a href="partenariat.html">
+Partenariat
+</a>
+
+
+<a href="recrutement.html">
+Recrutement
+</a>
+
+
+<a class="discord" href="https://discord.gg/2ywmXFAw8h">
+Discord
+</a>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- FORMULAIRE -->
+
+
+<main>
+
+
+<div class="form-card">
+
+
+
+<div class="title">
+
+
+<img src="logo.png">
+
+
+
+<h1>
+🤝 Demande de partenariat
+</h1>
+
+
+<p>
+Vous souhaitez collaborer avec Académie Nexar ?
+Présentez votre établissement et votre projet.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<form>
+
+
+
+
+<h2>
+🏫 Informations établissement
+</h2>
+
+
+
+
+<input 
+type="text"
+placeholder="Nom de l'établissement"
+required
+>
+
+
+
+
+<input 
+type="number"
+placeholder="Nombre de membres"
+required
+>
+
+
+
+
+<input 
+type="text"
+placeholder="Type de ping souhaité (everyone, rôle, aucun...)"
+required
+>
+
+
+
+
+<input 
+type="url"
+placeholder="Lien du serveur Discord"
+required
+>
+
+
+
+
+<input 
+type="text"
+placeholder="Pseudo Discord"
+required
+>
+
+
+
+
+
+
+
+<h2>
+📌 Informations complémentaires
+</h2>
+
+
+
+<textarea 
+placeholder="Présentez votre partenariat ou vos attentes..."
+></textarea>
+
+
+
+
+
+
+<button type="submit">
+
+Envoyer la demande
+
+</button>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+<img src="logo.png">
+
+
+<p>
+© Académie Nexar - V1™️
+</p>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>
